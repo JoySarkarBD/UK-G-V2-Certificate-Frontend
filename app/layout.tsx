@@ -1,9 +1,9 @@
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { PrivacyPolicyModalProvider } from "@/components/shared/privacy-policy-modal-provider";
 import CookieConsentBanner from "@/components/shared/cookie-consent-banner";
+import { PrivacyPolicyModalProvider } from "@/components/shared/privacy-policy-modal-provider";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import type { Metadata, Viewport } from "next";
-import { cookies } from "next/headers";
 import { DM_Sans, Geist, Geist_Mono, Inter } from "next/font/google";
+import { cookies } from "next/headers";
 import Script from "next/script";
 import "./globals.css";
 
@@ -29,7 +29,8 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: "Renewably UK - Powering Renewables",
-  description: "Renewably UK - Powering Renewables",
+  description:
+    "Renewably UK offers renewable energy solutions with Insurance Backed Guarantees, helping protect your installations while supporting a greener future.",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
